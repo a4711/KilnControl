@@ -1,6 +1,7 @@
 # KilnControl
 Control a Kiln with ESP8266.
-This project is based on MQTT. I am using node-red to create a front end to the device.
+Temperature is measured by a K-element and "MAX31855" using library from Adafruit.
+Control of the device and distribution of status is done via MQTT. I am using node-red to create a front end to the device.
 The heating curve can be specified by simple JSON format.
 
 The ESP modul can be configured via WifiManager.
