@@ -37,7 +37,9 @@
                             							
                             <tool id="io.sloeber.tool.sketch.compiler.cpp.118552438" name="Arduino C++ Compiler" superClass="io.sloeber.tool.sketch.compiler.cpp">
                                 								
-                                <option id="io.sloeber.compiler.cpp.sketch.option.incpath.1621063071" name="Include Paths (-I)" superClass="io.sloeber.compiler.cpp.sketch.option.incpath" valueType="includePath">
+                                <option id="io.sloeber.compiler.cpp.sketch.option.incpath.1621063071" name="Include Paths (-I)" superClass="io.sloeber.compiler.cpp.sketch.option.incpath" useByScannerDiscovery="false" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/core/core}&quot;"/>
                                     									
@@ -87,7 +89,7 @@
                             							
                             <tool id="io.sloeber.tool.compiler.c.468224787" name="Arduino C Compiler" superClass="io.sloeber.tool.compiler.c">
                                 								
-                                <option id="io.sloeber.compiler.c.sketch.option.incpath.1139909709" name="Include Paths (-I)" superClass="io.sloeber.compiler.c.sketch.option.incpath" valueType="includePath">
+                                <option id="io.sloeber.compiler.c.sketch.option.incpath.1139909709" name="Include Paths (-I)" superClass="io.sloeber.compiler.c.sketch.option.incpath" useByScannerDiscovery="false" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/core/core}&quot;"/>
                                     									
@@ -137,7 +139,7 @@
                             							
                             <tool id="io.sloeber.tool.sketch.compiler.s.519418177" name="Arduino Assembler" superClass="io.sloeber.tool.sketch.compiler.s">
                                 								
-                                <option id="io.sloeber.compiler.asm.sketch.option.incpath.536035086" name="Include Paths (-I)" superClass="io.sloeber.compiler.asm.sketch.option.incpath" valueType="includePath">
+                                <option id="io.sloeber.compiler.asm.sketch.option.incpath.536035086" name="Include Paths (-I)" superClass="io.sloeber.compiler.asm.sketch.option.incpath" useByScannerDiscovery="false" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/core/core}&quot;"/>
                                     									
