@@ -34,6 +34,8 @@ public:
 
 	double getInternalTemperature();
 
+	bool isDesiredValid() const;
+
 	void check_aging();
 
 	void publish_actual(double actual);
@@ -45,9 +47,9 @@ public:
   
     Adafruit_MAX31855 thermocouple;
   
-    unsigned int aging; // counter, which is incremented each cycle; when receiving a mqtt desired update, the counter is reset.
-    double desired;     // the temperature which should be reached (given my mqtt: <devicename>/desired
-    double previous;    // temperature of the previous measurement cycle
+    unsigned int aging = MAX_AGE+1; // counter, which is incremented each cycle; when receiving a mqtt desired update, the counter is reset.
+    double desired = 0.0;     // the temperature which should be reached (given my mqtt: <devicename>/desired
+    double previous = 0.0;    // temperature of the previous measurement cycle
 
     std::function<void(const char* topic, const char* message)> publish;
     

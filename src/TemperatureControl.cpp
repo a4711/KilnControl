@@ -18,8 +18,8 @@ void TemperatureControl::update_desired(double newValue) {
 }
 
 void TemperatureControl::expire() {
-	check_aging();
 	bool doHeating = false;
+	check_aging();
 	double actual = getTemperature();
 	if (isnan(actual)) {
 		char msg[100];
@@ -40,6 +40,8 @@ void TemperatureControl::expire() {
 #else
 		doHeating = (actual + correction) < desired; // if temperature rises quickly, we stop heating before we reach the desired value
 #endif
+		if (!isDesiredValid()) doHeating = false;
+
 		publish_actual(actual);
 		publish_status(actual, getInternalTemperature(), doHeating, delta);
 		aging++;
@@ -73,8 +75,14 @@ double TemperatureControl::getInternalTemperature() {
 	return NAN;
 }
 
+bool TemperatureControl::isDesiredValid() const
+{
+	return aging <= MAX_AGE;
+}
+
+
 void TemperatureControl::check_aging() {
-	if (aging > MAX_AGE) {
+	if (!isDesiredValid()) {
 		desired = 0.0;
 	}
 }

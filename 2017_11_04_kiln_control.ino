@@ -1,4 +1,4 @@
-
+#include <OneWire.h>
 #include "DeviceConfig.h"
 
 #include "myiot_timer_system.h"
@@ -9,11 +9,22 @@
 #include "Mqtt.h"
 #include "HeatingCurve.h"
 #include "webServer.h"
+#include "TemperatureDistribution.h"
+
+
+enum
+{
+  ONEWIRE = 4, // ONEWIRE bus on GPIO4
+};
+
 
 MyIOT::TimerSystem tsystem;
 Mqtt mqtt;
 DeviceConfig config;
 TemperatureControl temperatureControl;
+OneWire oneWire(ONEWIRE);
+TemperatureDistribution ds1820(oneWire);
+
 /*
   Ideensammlung:
 
@@ -75,7 +86,7 @@ void setup() {
    buttonControl.setup(publish);
    temperatureControl.setup(publish);
    heatingCurve.setup([](const char* topic, const char* message) {temperatureControl.update_desired(atof(message)); ; Serial.println(topic); });
-
+   ds1820.setup(publish);
 
    tsystem.add(&ota, MyIOT::TimerSystem::TimeSpec(0,10e6));
    tsystem.add(&webServer, MyIOT::TimerSystem::TimeSpec(0,10e6));
@@ -84,7 +95,7 @@ void setup() {
    tsystem.add(&temperatureControl, MyIOT::TimerSystem::TimeSpec(5))  ;
    tsystem.add(&mqtt, MyIOT::TimerSystem::TimeSpec(0,100000000));
    tsystem.add(&heatingCurve, MyIOT::TimerSystem::TimeSpec(1));
-
+   tsystem.add([](){ds1820.expire();}, MyIOT::TimerSystem::TimeSpec(60));
 }
 
 

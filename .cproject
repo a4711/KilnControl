@@ -80,6 +80,10 @@
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266HTTPClient}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266HTTPClient/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/DallasTemperature}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/OneWire}&quot;"/>
                                     								
                                 </option>
                                 								
@@ -130,6 +134,10 @@
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266HTTPClient}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266HTTPClient/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/DallasTemperature}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/OneWire}&quot;"/>
                                     								
                                 </option>
                                 								
@@ -180,6 +188,10 @@
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266HTTPClient}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266HTTPClient/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/DallasTemperature}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/OneWire}&quot;"/>
                                     								
                                 </option>
                                 								

@@ -8,10 +8,9 @@
 #ifndef MYIOT_TIMER_SYSTEM_H_
 #define MYIOT_TIMER_SYSTEM_H_
 
-
-
-
 #include <stdint.h>
+#include <functional>
+
 namespace MyIOT
 {
 class ITimer
@@ -37,6 +36,8 @@ public:
 class TimerSystem
 {
 public:
+   typedef std::function<void()> F_Expire;
+
   class TimeSpec
   {
     static const uint64_t MAX_NS = 1000ull * 1000ull * 1000ull;
@@ -205,6 +206,11 @@ public:
     return head->append(node);
   }
 
+  bool add(const F_Expire& f_expire, const TimeSpec& tspec)
+  {
+	  return add(new FExpireTimer(f_expire), tspec);
+  }
+
   bool remove(const ITimer& timer)
   {
     Node* predecessor = nullptr;
@@ -322,6 +328,16 @@ private:
     ITimer& timer;
     TimeSpec tspec;
     TimeSpec next_expiration;
+  };
+
+  class FExpireTimer : public ITimer
+  {
+  public:
+	  FExpireTimer(const F_Expire& xf_expire): f_expire(xf_expire){}
+	  virtual void expire() {if (f_expire) f_expire();}
+	  virtual void destroy() {delete this;}
+  private:
+	  F_Expire f_expire;
   };
 
   // ------------------------
