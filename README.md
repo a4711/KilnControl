@@ -4,6 +4,11 @@ Temperature is measured by a K-element and "MAX31855" using library from Adafrui
 Control of the device and distribution of status is done via MQTT. I am using node-red to create a front end to the device.
 The heating curve can be specified by simple JSON format.
 
+The heating wire of the kiln is controled via SSR (solid state relay). 
+The kiln has to be supplied via single wire 230V. 
+The SSR is behind a relay, which is connected to a safety switch (only activated if the kiln is closed).
+__Dangerous: Do not connect the SSR directly between power supply and heating wire. You might have 230V on the heating wire! __
+
 The ESP modul can be configured via WifiManager.
 You have to configure your local WIFI settings, the MQTT server and the "DeviceName".
 The program creates a simple web server (port 80) where you can change the "DeviceName" and the MQTT server.
@@ -15,6 +20,9 @@ The following messages are distributed via MQTT:
  The program subscribes for the following messages:
  * start : the message can contain any url providing a heating curve in JSON format 
  * stop : stop the current heating process 
+
+![ESP8266 Kiln Control](doc/kiln_control_board.jpg)
+
 
 Sketch
 ------
@@ -46,3 +54,28 @@ Example:
             }
         ]
     }
+    
+Some more pictures:
+-
+The kiln. On the right side you can see the thermocouple (type K) which I am using. 
+Thg gray wire coming out on the top is the control side (low voltage) of the SSR.
+
+![The Kiln](doc/the_kiln.jpg)
+
+<hr>
+
+Inside of the of the power control. The red thing in the upper left corner is the safety switch, which detects if the kiln is closed.
+The blue thing at the bottom is the power relay, which is only active if the red switch is closed.
+At the right side you see the SSR, which is controlled by the ESP8266.
+
+The thing in the middle is a bi-metal controlling unit, which allows to set a "heating percentage". 
+This unit controls the power relay (together with the safety switch). 
+I don't use this unit and maybe I will replace it by another SSR, to be able to activate power remotely.
+
+![SSR after safety relay](doc/kiln_control_ssr.jpg)
+
+<hr>
+
+The thermocouple inside of the kiln.
+
+![Thermocouple](doc/thermocouple_inside.jpg)
