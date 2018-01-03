@@ -26,6 +26,13 @@ The following messages are distributed via MQTT:
 
 Sketch
 ------
+
+The micro USB connector is just for power supply. To supply the module with 3.3V a AMS1117 voltage regultor is used.
+The switch on the board just distributes a MQTT message but is not of any use, yet.
+I added an additional temperature sensor (DS18B20) to compare it with the internal temperatur of the MAX31855.
+(This additional temperature sensor is just for fun.)
+
+
 ![ESP8266 Kiln Control](doc/sketch1.jpg)
 
 Heating Curve
