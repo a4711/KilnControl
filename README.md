@@ -16,6 +16,10 @@ The following messages are distributed via MQTT:
  * start : the message can contain any url providing a heating curve in JSON format 
  * stop : stop the current heating process 
 
+Sketch
+------
+![ESP8266 Kiln Control](doc/sketch1.jpg)
+
 Heating Curve
 -------------
 
