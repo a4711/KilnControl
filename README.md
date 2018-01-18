@@ -28,6 +28,10 @@ Sketch
 ------
 
 The micro USB connector is just for power supply. To supply the module with 3.3V a AMS1117 voltage regultor is used.
+Please note, that the pins RST, EN, GPIO0 are connected to VCC with 4.7 kOhm pull-up resistors
+and GPIO15 is connected to GND with 4.7 kOhm pull-down resistor directly on the ESP12F module.
+You will not find them in the sketch (see photo of my board.)
+
 The switch on the board just distributes a MQTT message but is not of any use, yet.
 I added an additional temperature sensor (DS18B20) to compare it with the internal temperatur of the MAX31855.
 (This additional temperature sensor is just for fun.)
