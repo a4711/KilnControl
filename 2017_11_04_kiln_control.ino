@@ -1,14 +1,14 @@
 #include <OneWire.h>
-#include "DeviceConfig.h"
+#include "myiot_DeviceConfig.h"
 
 #include "myiot_timer_system.h"
 #include "button_control.h"
-#include "ota.h"
+#include "myiot_ota.h"
 #include "led.h"
 #include "TemperatureControl.h"
-#include "Mqtt.h"
+#include "myiot_Mqtt.h"
 #include "HeatingCurve.h"
-#include "webServer.h"
+#include "myiot_webServer.h"
 #include "TemperatureDistribution.h"
 
 
@@ -19,8 +19,10 @@ enum
 
 
 MyIOT::TimerSystem tsystem;
-Mqtt mqtt;
-DeviceConfig config;
+MyIOT::Mqtt mqtt;
+MyIOT::DeviceConfig config;
+MyIOT::OTA ota;
+MyIOT::WebServer webServer;
 TemperatureControl temperatureControl;
 OneWire oneWire(ONEWIRE);
 TemperatureDistribution ds1820(oneWire);
