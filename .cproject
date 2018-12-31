@@ -25,7 +25,7 @@
             			
             <storageModule moduleId="cdtBuildSystem" version="4.0.0">
                 				
-                <configuration artifactName="${ProjName}" buildProperties="" description="" id="io.sloeber.core.toolChain.release.1220093498" name="Release" parent="org.eclipse.cdt.build.core.emptycfg">
+                <configuration artifactName="${ProjName}" buildProperties="" description="" id="io.sloeber.core.toolChain.release.1220093498" name="Release" optionalBuildProperties="" parent="org.eclipse.cdt.build.core.emptycfg">
                     					
                     <folderInfo id="io.sloeber.core.toolChain.release.1220093498.1110184436" name="/" resourcePath="">
                         						
@@ -37,7 +37,7 @@
                             							
                             <tool id="io.sloeber.tool.sketch.compiler.cpp.118552438" name="Arduino C++ Compiler" superClass="io.sloeber.tool.sketch.compiler.cpp">
                                 								
-                                <option id="io.sloeber.compiler.cpp.sketch.option.incpath.1621063071" name="Include Paths (-I)" superClass="io.sloeber.compiler.cpp.sketch.option.incpath" useByScannerDiscovery="false" valueType="includePath">
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="io.sloeber.compiler.cpp.sketch.option.incpath.1621063071" name="Include Paths (-I)" superClass="io.sloeber.compiler.cpp.sketch.option.incpath" useByScannerDiscovery="false" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
                                     									
@@ -45,45 +45,43 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/core/variant}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ArduinoJson}&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ArduinoJson/src}&quot;"/>
-                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ArduinoOTA}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266WebServer}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266WebServer/src}&quot;"/>
-                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266WiFi}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266WiFi/src}&quot;"/>
-                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/PubSubClient}&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/PubSubClient/src}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/WiFiManager}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/DNSServer}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/DNSServer/src}&quot;"/>
-                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266mDNS}&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/SPI}&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/Adafruit_MAX31855}&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/Adafruit_MAX31855/src}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266HTTPClient}&quot;"/>
                                     									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/Adafruit_MAX31855_library}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ArduinoJson_ID64/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/DallasTemperature_ID54}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/OneWire_ID1}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/PubSubClient_ID89/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/WiFi/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/DNSServer/src}&quot;"/>
+                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266HTTPClient/src}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/DallasTemperature}&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266WebServer/src}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/OneWire}&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266WiFi/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/SPI}&quot;"/>
                                     								
                                 </option>
                                 								
@@ -93,51 +91,49 @@
                             							
                             <tool id="io.sloeber.tool.compiler.c.468224787" name="Arduino C Compiler" superClass="io.sloeber.tool.compiler.c">
                                 								
-                                <option id="io.sloeber.compiler.c.sketch.option.incpath.1139909709" name="Include Paths (-I)" superClass="io.sloeber.compiler.c.sketch.option.incpath" useByScannerDiscovery="false" valueType="includePath">
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="io.sloeber.compiler.c.sketch.option.incpath.1139909709" name="Include Paths (-I)" superClass="io.sloeber.compiler.c.sketch.option.incpath" useByScannerDiscovery="false" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/core/core}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/core/variant}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ArduinoJson}&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ArduinoJson/src}&quot;"/>
-                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ArduinoOTA}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266WebServer}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266WebServer/src}&quot;"/>
-                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266WiFi}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266WiFi/src}&quot;"/>
-                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/PubSubClient}&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/PubSubClient/src}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/WiFiManager}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/DNSServer}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/DNSServer/src}&quot;"/>
-                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266mDNS}&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/SPI}&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/Adafruit_MAX31855}&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/Adafruit_MAX31855/src}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266HTTPClient}&quot;"/>
                                     									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/Adafruit_MAX31855_library}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ArduinoJson_ID64/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/DallasTemperature_ID54}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/OneWire_ID1}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/PubSubClient_ID89/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/WiFi/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/DNSServer/src}&quot;"/>
+                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266HTTPClient/src}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/DallasTemperature}&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266WebServer/src}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/OneWire}&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266WiFi/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/SPI}&quot;"/>
                                     								
                                 </option>
                                 								
@@ -147,51 +143,49 @@
                             							
                             <tool id="io.sloeber.tool.sketch.compiler.s.519418177" name="Arduino Assembler" superClass="io.sloeber.tool.sketch.compiler.s">
                                 								
-                                <option id="io.sloeber.compiler.asm.sketch.option.incpath.536035086" name="Include Paths (-I)" superClass="io.sloeber.compiler.asm.sketch.option.incpath" useByScannerDiscovery="false" valueType="includePath">
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="io.sloeber.compiler.asm.sketch.option.incpath.536035086" name="Include Paths (-I)" superClass="io.sloeber.compiler.asm.sketch.option.incpath" useByScannerDiscovery="false" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/core/core}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/core/variant}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ArduinoJson}&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ArduinoJson/src}&quot;"/>
-                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ArduinoOTA}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266WebServer}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266WebServer/src}&quot;"/>
-                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266WiFi}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266WiFi/src}&quot;"/>
-                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/PubSubClient}&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/PubSubClient/src}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/WiFiManager}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/DNSServer}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/DNSServer/src}&quot;"/>
-                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266mDNS}&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/SPI}&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/Adafruit_MAX31855}&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/Adafruit_MAX31855/src}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266HTTPClient}&quot;"/>
                                     									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/Adafruit_MAX31855_library}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ArduinoJson_ID64/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/DallasTemperature_ID54}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/OneWire_ID1}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/PubSubClient_ID89/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/WiFi/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/DNSServer/src}&quot;"/>
+                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266HTTPClient/src}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/DallasTemperature}&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266WebServer/src}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/OneWire}&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/ESP8266WiFi/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_11_04_kiln_control/libraries/SPI}&quot;"/>
                                     								
                                 </option>
                                 								
@@ -213,7 +207,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding="libraries/WiFiManager/travis|libraries/ArduinoJson/scripts|libraries/ArduinoJson/fuzzing|libraries/?*/**/test*/**|libraries**/._*|libraries/?*/**/third-party/**|libraries/?*/**/?xamples/**|libraries/?*/**/?xtras/**|libraries/?*/c*/?*|libraries/?*/d*/?*|libraries/?*/D*/?*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding="libraries/OneWire_ID1/util|libraries/ArduinoJson_ID64/.github|libraries/Adafruit_MAX31855_library/Adafruit_Sensor|libraries/WiFiManager/travis|libraries/ArduinoJson/scripts|libraries/ArduinoJson/fuzzing|libraries/?*/**/test*/**|libraries**/._*|libraries/?*/**/third-party/**|libraries/?*/**/?xamples/**|libraries/?*/**/?xtras/**|libraries/?*/c*/?*|libraries/?*/d*/?*|libraries/?*/D*/?*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				

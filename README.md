@@ -39,6 +39,71 @@ I added an additional temperature sensor (DS18B20) to compare it with the intern
 
 ![ESP8266 Kiln Control](doc/sketch1.jpg)
 
+
+Used GPIOs
+----------
+<table border="1">
+<tr>
+  <th>GPIO</th>
+  <th>Function</th>
+</tr>
+
+<tr>
+  <td>GPIO 0 </td>
+  <td>to be pulled low for flashing (HIGH via 4.7 kOhm)</td>
+</tr>
+
+<tr>
+  <td>GPIO 1</td>
+  <td>Serial TX</td>
+</tr>
+
+<tr>
+  <td>GPIO 2</td>
+  <td>built in LED used for status blinking (HIGH via 4.7 kOhm)</td>
+</tr>
+
+<tr>
+  <td>GPIO 3</td>
+  <td>Serial RX</td>
+</tr>
+
+<tr>
+  <td>GPIO 4</td>
+  <td>Dallas Temperature Sensor DS18B20 via OneWire</td>
+</tr>
+
+<tr>
+  <td>GPIO 5 </td>
+  <td>Test Button : 3s -> reset, 10s -> reset + wifi reset </td>
+</tr>
+
+<tr>
+  <td>GPIO 12 </td>
+  <td>MAX31855 CS (SPI)</td>
+</tr>
+
+<tr>
+  <td>GPIO 13 </td>
+  <td>MAX31855 DO -->  MISO  (SPI)</td>
+</tr>
+
+<tr>
+  <td>GPIO 14 </td>
+  <td>MAX31855 Clock (SPI) </td>
+</tr>
+
+<tr>
+  <td>GPIO 15</td>
+  <td>-- unused -- (LOW via 4.7 kOhm)</td>
+</tr>
+
+<tr>
+  <td>GPIO 16 </td>
+  <td>Solid State Relay to switching mains</td>
+</tr>
+</table>
+
 Heating Curve
 -------------
 

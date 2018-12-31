@@ -21,7 +21,7 @@ class TemperatureDistribution
 
       Serial.println("TemperatureDistribution::setup ... ");
       sensors.begin();
-      sensors.setResolution(TEMP_12_BIT);
+      sensors.setResolution(12);
       Serial.print("Device Count: ");
       Serial.println(sensors.getDeviceCount());
       detect();
